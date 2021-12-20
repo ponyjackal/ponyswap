@@ -77,7 +77,7 @@ describe("Exchange", () => {
   });
 
   describe("getEthAmount", async () => {
-    it("returns correct eth amount", async () => {
+    it("returns correct ether amount", async () => {
       await token.approve(exchange.address, toWei(2000));
       await exchange.addLiquidity(toWei(2000), { value: toWei(1000) });
 
